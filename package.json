@@ -1,0 +1,28 @@
+{
+  "name": "cricket-news-ai-agent",
+  "version": "1.0.0",
+  "description": "AI agent that crawls cricket websites and sends daily news reports",
+  "main": "cricket-agent.js",
+  "scripts": {
+    "start": "node cricket-agent.js",
+    "dev": "nodemon cricket-agent.js",
+    "test": "node test-crawl.js",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.2.1",
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "nodemailer": "^6.9.7",
+    "puppeteer": "^21.5.2",
+    "puppeteer-core": "^21.5.2",
+    "chrome-aws-lambda": "^10.1.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
